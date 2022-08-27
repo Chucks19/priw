@@ -9,7 +9,7 @@
 
 int _printf(const char *format, ...)
 {
-int count, j;
+int count, run, j;
 char *strin;
 unsigned int i;
 
@@ -41,8 +41,10 @@ for (i = 0; format[i] != '\0'; i++){
 		}
 	i++;	
 	}
-
+run = count;
 }
-return (count);
+va_end(lp);
+return run;
+return count;
 
 }
