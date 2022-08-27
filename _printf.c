@@ -41,10 +41,7 @@ for (i = 0; format[i] != '\0'; i++){
 		}
 	i++;	
 	}
-run = count;
 }
+return (run);
 va_end(lp);
-return run;
-return count;
-
 }
