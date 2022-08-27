@@ -28,6 +28,9 @@ for (i = 0; format[i] != '\0'; i++){
 			case 'c':
 				count += _putchar(va_arg(lp, int));
 				break;
+			case '%':
+				count += _putchar('%');
+				break;
 			case 's':
 				strin = va_arg(lp, char *);
 				for (j = 0; strin[j] != '\0'; j++ )
@@ -41,4 +44,5 @@ for (i = 0; format[i] != '\0'; i++){
 
 }
 return (count);
+
 }
