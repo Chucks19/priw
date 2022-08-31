@@ -15,13 +15,16 @@
  *
  */
 
-typedef struct format
+typedef struct format1
 {
 char *id;
 int (*f)();
 } convert_match;
 
+int _itoa(int temp)
+int count_digits(int temp);
 int printf_pointer(va_list val);
+int pr_int(int valve);
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
 int printf_exclusive_string(va_list val);
@@ -38,7 +41,6 @@ int _strlen(char *s);
 int *_strcpy(char *dest, char *src);
 int _strlenc(const char *s);
 int rev_string(char *s);
-int _strlenc(const char *s);
 int printf_37(void);
 int printf_char(va_list val);
 int printf_string(va_list val);
