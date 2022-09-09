@@ -21,6 +21,7 @@ char *id;
 int (*f)();
 } convert_match;
 
+int _itoa(int temp)
 int count_digits(int temp);
 int printf_pointer(va_list val);
 int pr_int(int valve);
